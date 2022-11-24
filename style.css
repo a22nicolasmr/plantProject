@@ -3,13 +3,17 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
+    
   }
   
   .image-gallery > li {
-    flex-basis: 350px; /* width: 350px; */
+    flex-basis: 350px;  width: 350px; 
+    position: relative;
+    cursor: pointer;
   }
   
   .image-gallery li img {
+    
     object-fit: cover;
     max-width: 100%;
     height: auto;
@@ -17,9 +21,12 @@
     border-radius: 5px;
   }
   .image-gallery > li {
-    /* ... */
     position: relative;
     cursor: pointer;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 5px;
+    
   }
   .overlay {
     position: absolute;
@@ -41,4 +48,10 @@
   /* hover */
   .image-gallery li:hover .overlay {
     transform: scale(1);
+  }
+  ul{
+    list-style: none;
+  }
+  .image-gallery{
+    height: 100vh;
   }
